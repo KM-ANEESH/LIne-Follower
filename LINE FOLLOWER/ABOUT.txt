@@ -1,0 +1,65 @@
+Components –
+(1) DC Geared Motor
+
+(2) Arduino uno
+
+(3) L298N Motor Driver
+
+(4) IR Sensor
+
+(5) Jumper Wire
+
+(6) 12 Volt Lipo Battery
+
+Structure Making –
+The basic structure of a line follower robot is quite similar to any arduino car. The only thing that differs is the placement of the IR sensors in front of the robot. So while building a line follower robot you have to keep your attention in the front part of the robot. And you have to keep enough space for the installation of the IR sensors. At first you have to take the four dc geared motor for your robot. Connect the wires in the motor. Then you have to take a wooden or plastic board which can be used as a chassis of the robot. Fix all the dc geared motor in the four corners of the chassis by using the glue.
+
+
+
+Now it’s time to connect the wheels in the dc motors. But before this you may use the shaft coupling for the better performance of the robot. Now you have to connect the wheels in the motors. Use the screw and fix them properly with the shaft of the dc motors. This is the basic configuration of the line follower robot.
+
+Circuit Connection –
+Now we have to make the circuit for line follower robot. And for this purpose you need some circuit component like Arduino uno, L298N motor driver and IR sensors. At first take the L298N motor driver and place it in the rear side of the chessis. Then take the wires of the dc motor and connect it with the output terminal of the L298N motor driver. After this take the Arduino uno, and then place it in front of the motor driver. At this time you have to build the connections between the arduino and L298N motor driver. For this you may follow the steps.
+
+
+
+Connection between Arduino and L298N motor driver –
+(1) ENA of motor driver – D5 of Arduino uno
+
+(2) IN1 of motor driver – D6 of Arduino uno
+
+(3) IN2 of motor driver – D7 of Arduino uno
+
+(4) IN3 of motor driver – D8 of Arduino uno
+
+(5) IN4 of motor driver – D9 of Arduino uno
+
+(6) ENB of motor driver – D10 of Arduino uno
+
+After all this connections you have to take the IR sensors. Then you have to do the connections between IR sensor and Arduino uno.
+
+
+
+Connection between IR sensor and Arduino –
+(1) Output pin of 1st IR sensor – A2 pin of Arduino
+
+(2) Output pin of 2nd IR sensor – A1 pin of Arduino
+
+(3) Output pin of 3rd IR sensor – A0 pin of Arduino
+
+These are all the connections. For better understand you can follow the circuit diagram –
+
+
+Also you have to give the 5 volt positive supply to all the IR sensors and the motor driver. At last you have to give the power supply to the circuit. You can use a 12 volt Lipo battery to power up the circuit. This is all about the circuit connection. Now you have to move to the coding section.
+
+Arduino Code –
+Now you have to do the coding for line follower robot. In this project we use three IR sensor. So our code will be based on this three IR sensors. Connect the arduino with your computer and do the coding.
+
+Line follower robot working principal –
+(1) When the left ir sensor detect the black line, the robot will move to left.
+
+(2) When the right ir sensor detect the black line, the robot will move to right.
+
+(3) When the middle ir sensor detect the black line, the robot will go forward.
+
+(4) When all the ir sensor detect the black line, the robot will stop.
